@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Cadastro.css">
+    <title>Singup</title>
+</head>
+
+<body class="fundo">
+    <div class="grid-container">
+        <header class="logo">
+            <img src="/logo.png" alt="Logo da loja" width="70%">
+        </header>
+        <main>
+            <section class="card">
+                <h1>Cadastro</h1>
+
+                <div id="msgError"></div>
+                <div id="msgSuccess"></div>
+
+                <div class="campo">
+                    <label id="labelNome" for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder=" " required />
+                </div>
+
+                <div class="campo">
+                    <label id="labelUsuario" for="usuario">Usuário</label>
+                    <input type="text" id="usuario" placeholder=" " required />
+                </div>
+
+                <div class="campo">
+                    <label id="labelSenha" for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder=" " required />
+                    <i id="verSenha" class="fa fa-eye" riaa-hidden="true"></i>
+                </div>
+
+                <div class="campo">
+                    <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha</label>
+                    <input type="password" id="confirmSenha" placeholder=" " required />
+                    <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+                <div class="dropdown">
+                    <select id="setor" class="dropdown-select">
+                        <option disabled selected>Setor</option>
+                        <option value="producao">Produção</option>
+                        <option value="estoque">Estoque</option>
+                    </select>
+                </div>
+
+                <p id="setorSelecionado" style="margin-top: 20px;"></p>
+                <div class="confirma">
+                    <button onclick="cadastrar()">Cadastrar</button>
+                </div>
+    </div>
+    </section>
+    </main>
+    </div>
+    <script src="/Cadastro.js"></script>
+
+</body>

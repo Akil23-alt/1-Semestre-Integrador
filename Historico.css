@@ -1,0 +1,32 @@
+.bolinha.entrada {
+    background: #28a745; /* Verde para entrada */
+}
+
+.bolinha.ajuste {
+    background: #007bff; /* Azul para ajuste */
+}
+
+.bolinha.exclusao {
+    background: #dc3545; /* Vermelho para exclusão */
+}
+
+.logout-button {
+    background-color: #f44336; /* Cor de destaque para o botão Sair */
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Ajustes para a tabela de histórico */
+#lista-historico td {
+    vertical-align: top; /* Alinha o conteúdo da célula no topo */
+}

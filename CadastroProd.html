@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="/CadastroProd.css">
+</head>
+
+<body>
+    <img class="logo" src="/Negrao_logo_semFundo.png" alt>
+    <div class="container">
+        <div class="header">
+            <h1>Cadastro de Produtos</h1>
+        </div>
+        <div class="form-grid">
+            <div class="form-group">
+                <label for="codigo" id="labelCodigo">Código</label>
+                <input placeholder="A-000-000" type="text" id="codigo" required>
+            </div>
+            <div class="form-group">
+                <label for="origem">Origem</label>
+                <div class="radio-group" id="origem">
+                    <input type="radio" id="comprado" name="origem" required value="comprado">
+                    <label for="comprado">Comprado</label>
+                    <input type="radio" id="fabricado" name="origem" value="fabricado">
+                    <label for="fabricado">Fabricado</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="grupo_produto" id="labelGrupo_produto">Grupo do
+                    produto</label>
+                <input placeholder="Classificação do produto" type="text" id="grupo_produto" required>
+            </div>
+            <div class="form-group">
+                <label for="ncm" id="labelNcm">NCM</label>
+                <input placeholder="0000.00.00" type="text" id="ncm" required>
+            </div>
+            <div class="form-group">
+                <label for="preco_medio" id="labelPreco_medio">Preço
+                    Médio</label>
+                <input placeholder="R$ 100.000.000" type="text" id="preco_medio" required>
+            </div>
+            <div class="form-group">
+                <label for="num" id="labelNum">Quantidade</label>
+                <input placeholder="Total no estoque" type="text" id="num" required>
+            </div>
+            <div class="form-group">
+                <label for="estoque_minimo" id="labelEstoque_minimo">Estoque
+                    mínimo</label>
+                <input placeholder="Demanda minima" type="number" id="estoque_minimo" required>
+            </div>
+            <div class="form-group">
+                <label for="unidade_medida" id="labelUnidade_medida">Unidade
+                    de medida</label>
+                <input type="text" id="unidade_medida" required>
+            </div>
+            <div class="form-group full-width">
+                <label for="fornecedor" id="labelFornecedor">Fornecedor</label>
+                <input placeholder="Nome completo do fornecedor" type="text" id="fornecedor" required>
+            </div>
+            <div class="form-group full-width">
+                <label for="fabricante" id="labelFabricante">Fabricante</label>
+                <input placeholder="Nome completo do Fabricante" type="text" id="fabricante" required>
+            </div>
+            <div class="form-group full-width">
+                <label for="descricao_produto" id="labelDescricao_produto">Descrição produto</label>
+                <input placeholder="Nome do produto e nome popular" type="text" id="descricao_produto" required>
+            </div>
+            <div class="form-group full-width">
+                <label for="descricao_tecnica" id="labelDescricao_tecnica">Descrição técnica</label>
+                <textarea style="resize:vertical;" id="descricao_tecnica" required></textarea>
+            </div>
+            <div class="form-group full-width">
+                <label for="observacao" id="labelObservacao">Observação</label>
+                <input placeholder="Informação adicional" type="text" id="observacao">
+            </div>
+            <div class="form-group full-width">
+                <label for="imagem" id="labelImagem">Imagem</label>
+                <div class='input-wrapper'>
+                    <label for="img-produto">
+                        Selecionar um arquivo
+                    </label>
+                    <input id="img-produto" type='file' value />
+                    <span id='file-name'></span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <button onclick="Cadastrar()" class="confirm-button">Confirmar</button>
+        </div>
+    </div>
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script> <script src="/Token.js"></script> 
+    <script src="/CarregarJson.js"></script>
+    <script src="/CadastroProd.js"></script> 
+</html>
