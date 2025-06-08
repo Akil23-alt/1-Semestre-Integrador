@@ -4,11 +4,7 @@ Este projeto é um sistema de controle de estoque robusto e interativo, desenvol
 
 ## Estrutura do Projeto
 
--   `/HTML/`: Contém os arquivos HTML de cada página.
--   `/CSS/`: Contém os arquivos CSS para estilização de cada página.
--   `/JS/`: Contém os arquivos JavaScript que implementam a lógica do sistema.
--   `/Img/`: Contém as imagens utilizadas no projeto (ex: logos, ícones).
--   `/JSON/`: Contém arquivos de dados, como `Produtos.json` para carga inicial de produtos.
+Todos os arquivos do projeto (HTML, CSS, JavaScript, JSON e Imagens) estão localizados na raiz do diretório principal.
 
 ### Arquivos HTML Principais
 
@@ -53,10 +49,19 @@ Este projeto é um sistema de controle de estoque robusto e interativo, desenvol
 * `CadastroProd.css`: Estilos para o formulário de cadastro de produtos (grid do formulário, campos de entrada, upload de imagem customizado).
 * `Historico.css`: Estilos para a tabela de histórico, cores para tipos de movimentação, e barra de pesquisa.
 * `Grafico.css`: Estilos para o layout do dashboard de gráficos e estatísticas, cards de gráficos e estatísticas, e botão de relatório.
+* `Login.css`: Estilos para a página de login.
 
 ### Arquivos JSON
 
 * `Produtos.Json`: Contém uma lista de produtos pré-definidos que podem ser carregados inicialmente no sistema para popular o estoque. Cada objeto de produto inclui detalhes como código, origem, descrição, preço, quantidade, etc.
+* `Usuarios.Json`: Provavelmente utilizado para carga inicial de usuários ou como um backup de estrutura. (Embora o sistema use `localStorage` para usuários, a menção no `git status` indica sua presença original).
+
+### Arquivos de Imagem
+
+* `Fundogeral.png`: Imagem de fundo utilizada em algumas páginas.
+* `Negrao_logo.png`: Logo da empresa Negrão.
+* `Negrao_logo_semFundo.png`: Versão da logo sem fundo.
+* `logo.png`: Outra versão da logo, possivelmente utilizada na página de cadastro.
 
 ## Dependências (Bibliotecas Externas)
 
@@ -68,20 +73,21 @@ O projeto utiliza as seguintes bibliotecas externas:
 * **SweetAlert2 v11:** Para exibir alertas e confirmações personalizadas e mais atraentes.
 * **Chart.js:** Biblioteca JavaScript para criar gráficos interativos.
 * **jsPDF v2.5.1:** Para gerar arquivos PDF no lado do cliente.
-* **Font Awesome v4.7.0:** (Observado em `Login.html` e `Cadastro.html`) Para ícones, como o de visibilidade da senha.
+* **Font Awesome v4.7.0:** Para ícones, como o de visibilidade da senha.
 
 ## Como Usar/Executar o Projeto
 
 1.  **Clone ou baixe** este repositório para o seu ambiente local.
-2.  **Abra o arquivo `Login.html`** em seu navegador web preferido.
+2.  **Abra o arquivo `Login.html`** diretamente em seu navegador web preferido. Não é necessário um servidor web local para a maioria das funcionalidades, pois os dados são persistidos no `localStorage` do navegador.
 3.  Na tela de login, você pode:
     * **Cadastrar um novo usuário** clicando no link "Cadastre-se" para acessar `Cadastro.html`. Preencha os dados e escolha o setor.
     * **Fazer login** com um usuário existente (se houver no `localStorage` ou após cadastrar um).
 4.  Após o login bem-sucedido, você será redirecionado para a página de Estoque (`Index.html`).
 5.  Explore as diferentes funcionalidades:
     * **Estoque (`Index.html`):** Visualize, pesquise, edite (estoque e preço) e exclua produtos.
-    * **Cadastro de Produtos (`CadastroProd.html`):** Adicione novos produtos ao estoque com todos os detalhes e imagem (depende do cargo).
+    * **Cadastro de Produtos (`CadastroProd.html`):** Adicione novos produtos ao estoque com todos os detalhes e imagem.
     * **Histórico de Movimentações (`Historico.html`):** Consulte um registro detalhado de todas as operações de entrada, saída, alteração e exclusão.
     * **Gráficos e Dados (`Grafico.html`):** Veja estatísticas e gráficos visuais do seu estoque e gere relatórios em PDF.
 6.  Para sair da conta, use o botão "Logout" presente nas páginas.
+
 ---
