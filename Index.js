@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", carregarProdutos);
 
 // Função para navegar para a página de cadastro de produto
 function Cadastrar_prod_trocar() {
-    window.location.href = "/CadastroProd.html";
+    window.location.href = "CadastroProd.html";
 }
 
 // Funções de ordenação

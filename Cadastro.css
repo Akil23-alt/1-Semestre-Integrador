@@ -36,7 +36,7 @@ h2 {
 }
 .fundo {
     place-items: center;
-    background-image: url("/Fundogeral.png");
+    background-image: url("Fundogeral.png");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;

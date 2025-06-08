@@ -40,7 +40,7 @@ function entrar() {
     localStorage.setItem('token', token)
     localStorage.setItem('userLogado', JSON.stringify(userValid))
 
-    window.location.href = '/Index.html'
+    window.location.href = 'Index.html'
   } else {
     userLabel.style.color = 'red'
     usuario.style.borderColor = 'red'

@@ -392,7 +392,7 @@ function Cadastrar() {
             });
 
             setTimeout(() => {
-                window.location.href = "/Index.html";
+                window.location.href = "index.html";
             }, 2000);
         };
         reader.readAsDataURL(arquivoImagem); // Lê o arquivo como URL de dados (Base64)
