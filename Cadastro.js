@@ -112,7 +112,7 @@ function cadastrar() {
     msgError.style.display = "none";
 
     setTimeout(() => {
-      window.location.href = "/Login.html";
+      window.location.href = "Login.html";
     }, 3000);
   } else {
     msgError.style.display = "block";
