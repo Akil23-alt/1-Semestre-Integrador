@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', async () => {
-  const caminhoDoJsonProdutosIniciais = 'Produtos.json'; 
-
+  const caminhoDoJsonProdutosIniciais = 'Produtos.Json'; 
   try {
     const response = await fetch(caminhoDoJsonProdutosIniciais);
 
