@@ -102,7 +102,7 @@ if (userLogado_prod && userLogado_prod.Cargo === "producao") {
         showConfirmButton: false,
         timer: 3000
     }).then(() => {
-        window.location.href = "/Index.html";
+        window.location.href = "index.html";
     });
 }
 // Verifica os campos e impõe regras
