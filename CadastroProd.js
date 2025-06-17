@@ -93,7 +93,7 @@ let $input = document.getElementById('img-produto'),
 // Pegando o usuario logado, para guardar o nome junto a lista
 const userLogado_prod = JSON.parse(localStorage.getItem("userLogado"));
 
-// --- Verificação de Cargo para Redirecionamento (INÍCIO DA MUDANÇA) ---
+// Verificação de Cargo para Redirecionamento 
 if (userLogado_prod && userLogado_prod.Cargo === "producao") {
     Swal.fire({
         icon: 'warning',
